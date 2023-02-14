@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 const postsDirectory =path.join(process.cwd(), 'posts');
 
 export  function getSortedPostsData(){
-    console.log( " getSortedPostsData  ");
+   
 
     // posts 파일 이름을 잡아주기
     const fileNames =fs.readdirSync(postsDirectory);
@@ -26,7 +26,7 @@ export  function getSortedPostsData(){
 
     })
 
-    console.log(allPostsData);
+   
     return allPostsData.sort((a, b) =>{
             if(a.date <b.date){
                 return 1;
